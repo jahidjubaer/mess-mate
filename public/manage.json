@@ -1,0 +1,44 @@
+[
+{
+"icon": "fa-solid fa-utensils",
+"title": "Update Individual Meals",
+"description": "Log today's meal count for each member, crucial for cost calculation.",
+"btnText": "Enter Meals",
+"color": "f472b6"
+},
+{
+"icon": "fa-solid fa-receipt",
+"title": "Add New Bazaar Expense",
+"description": "Record grocery, utility, or other group expenses and identify the payer.",
+"btnText": "Add Expense",
+"color": "3b82f6"
+},
+{
+"icon": "fa-solid fa-calendar-days",
+"title": "Monthly Meal Record",
+"description": "View and audit the cumulative meal counts for all members this month.",
+"btnText": "View Monthly Table",
+"color": "3abff8"
+},
+{
+"icon": "fa-solid fa-sack-dollar",
+"title": "Fund & Costing Summary",
+"description": "Review the overall money spent, current meal rate, and financial status.",
+"btnText": "View Report",
+"color": "fbbd23"
+},
+{
+"icon": "fa-solid fa-hand-holding-dollar",
+"title": "Due Collection & Settlement",
+"description": "View members who owe money or are in credit to facilitate settling accounts.",
+"btnText": "Settle Dues",
+"color": "36d399"
+},
+{
+"icon": "fa-solid fa-users-gear",
+"title": "Manage Members",
+"description": "Add or remove members, and update individual roles (Admin, Manager, Member).",
+"btnText": "Manage Members",
+"color": "37cdbe"
+}
+]

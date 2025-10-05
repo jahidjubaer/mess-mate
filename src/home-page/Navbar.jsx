@@ -4,19 +4,19 @@ import Dashboard from "./Dashboard";
 const Navbar = () => {
   return (
     <div className="shadow-sm bg-[#2D2D2D]">
-      <div className="navbar  w-10/12 mx-auto">
+      <div className="navbar w-11/12  lg:w-10/12 mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
             <div
               tabIndex={0}
               role="button"
-              className="btn btn-ghost lg:hidden "
+              className="btn bg-black lg:hidden "
             >
-              <i class="fa-solid fa-bars text-white fa-xl"></i>
+              <i className="fa-solid fa-bars text-white fa-xl "></i>
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm text-black bg-black-100 dropdown-content font-medium rounded-box z-1 mt-3 w-52 p-2 shadow"
+              className="menu menu-sm text-white bg-black dropdown-content font-medium rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
                 <a>Dashboard </a>
@@ -43,7 +43,7 @@ const Navbar = () => {
             </ul>
           </div>
           <a className="btn bg-[#2D2D2D] border-none shadow-none text-xl">
-            <i className="fa-solid fa-xl text-[#4CAF50] fa-utensils"></i>
+           <i className="fa-solid fa-2xl text-[#4CAF50] fa-utensils"></i>                             
             <span className="text-2xl text-white  ">Mass Mate</span>
           </a>
         </div>
@@ -105,7 +105,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <h3 className="text-white ml-6 mr-6 font-medium">Jahid Hasan</h3>
+          <h3 className="text-white ml-4 mr-6 hidden lg:block font-medium">Jahid Hasan</h3>
         </div>
       </div>
     </div>
