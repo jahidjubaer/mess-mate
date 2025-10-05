@@ -1,17 +1,13 @@
 import React from "react";
-import Dashboard from "./Dashboard";
+import Dashboard from "./home-page/Component/Dashboard";
 
-const Navbar = () => {
+const Navbar = ({setPageToggle}) => {
   return (
     <div className="shadow-sm bg-[#2D2D2D]">
       <div className="navbar w-11/12  lg:w-10/12 mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
-            <div
-              tabIndex={0}
-              role="button"
-              className="btn bg-black lg:hidden "
-            >
+            <div tabIndex={0} role="button" className="btn bg-black lg:hidden ">
               <i className="fa-solid fa-bars text-white fa-xl "></i>
             </div>
             <ul
@@ -43,32 +39,32 @@ const Navbar = () => {
             </ul>
           </div>
           <a className="btn bg-[#2D2D2D] border-none shadow-none text-xl">
-           <i className="fa-solid fa-2xl text-[#4CAF50] fa-utensils"></i>                             
+            <i className="fa-solid fa-2xl text-[#4CAF50] fa-utensils"></i>
             <span className="text-2xl text-white  ">Mass Mate</span>
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu   font-normal text-gray-300 menu-horizontal px-1">
-            <li className="hover:bg-[#4CAF50] hover:rounded-4xl hover:text-white hover:font-bold transition-all duration-300 ease-in-out cursor-pointer">
+            <li onClick={() => setPageToggle("Home")} className="hover:bg-[#4CAF50] hover:rounded-4xl hover:text-white hover:font-bold transition-all duration-300 ease-in-out cursor-pointer">
               <a>Dashboard </a>
             </li>
-            <li className="hover:bg-[#4CAF50] hover:rounded-4xl hover:text-white hover:font-bold transition-all duration-300 ease-in-out cursor-pointer">
-              <a>Meals </a>
+            <li onClick={() => setPageToggle("Meals")} className="hover:bg-[#4CAF50] hover:rounded-4xl hover:text-white hover:font-bold transition-all duration-300 ease-in-out cursor-pointer">
+              <a>Meals</a>
             </li>
-            <li className="hover:bg-[#4CAF50] hover:rounded-4xl hover:text-white hover:font-bold transition-all duration-300 ease-in-out cursor-pointer">
+            <li onClick={() => setPageToggle("Bazar")} className="hover:bg-[#4CAF50] hover:rounded-4xl hover:text-white hover:font-bold transition-all duration-300 ease-in-out cursor-pointer">
               <a>Bazar </a>
             </li>
-            <li className="hover:bg-[#4CAF50] hover:rounded-4xl hover:text-white hover:font-bold transition-all duration-300 ease-in-out cursor-pointer">
+            <li onClick={() => setPageToggle("FundCosting")} className="hover:bg-[#4CAF50] hover:rounded-4xl hover:text-white hover:font-bold transition-all duration-300 ease-in-out cursor-pointer">
               <a>Fund & Costing</a>
             </li>
-            <li className="hover:bg-[#4CAF50] hover:rounded-4xl hover:text-white hover:font-bold transition-all duration-300 ease-in-out cursor-pointer">
+            <li onClick={() => setPageToggle("MonthlyBillsUpdate")} className="hover:bg-[#4CAF50] hover:rounded-4xl hover:text-white hover:font-bold transition-all duration-300 ease-in-out cursor-pointer">
               <a>Monthly Bills Update </a>
             </li>
 
-            <li className="hover:bg-[#4CAF50] hover:rounded-4xl hover:text-white hover:font-bold transition-all duration-300 ease-in-out cursor-pointer">
+            <li onClick={() => setPageToggle("DueCollection")} className="hover:bg-[#4CAF50] hover:rounded-4xl hover:text-white hover:font-bold transition-all duration-300 ease-in-out cursor-pointer">
               <a>Due Collection</a>
             </li>
-            <li className="hover:bg-[#4CAF50] hover:rounded-4xl hover:text-white hover:font-bold transition-all duration-300 ease-in-out cursor-pointer">
+            <li onClick={() => setPageToggle("Members")} className="hover:bg-[#4CAF50] hover:rounded-4xl hover:text-white hover:font-bold transition-all duration-300 ease-in-out cursor-pointer">
               <a>Members</a>
             </li>
           </ul>
@@ -105,11 +101,12 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <h3 className="text-white ml-4 mr-6 hidden lg:block font-medium">Jahid Hasan</h3>
+          <h3 className="text-white ml-4 mr-6 hidden lg:block font-medium">
+            Jahid Hasan
+          </h3>
         </div>
       </div>
     </div>
-    
   );
 };
 
