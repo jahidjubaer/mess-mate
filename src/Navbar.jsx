@@ -1,9 +1,14 @@
-import React from "react";
-import Dashboard from "./home-page/Component/Dashboard";
 
-const Navbar = ({setPageToggle}) => {
+import Dashboard from "./home-page/Component/Dashboard";
+import Login from "./auth/Login";
+
+const Navbar = ({setPageToggle, setLogout}) => {
+  
+  
   return (
+   
     <div className="shadow-sm bg-[#2D2D2D]">
+       
       <div className="navbar w-11/12  lg:w-10/12 mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
@@ -96,9 +101,10 @@ const Navbar = ({setPageToggle}) => {
               <li>
                 <a>Settings</a>
               </li>
-              <li>
+              <li onClick={() => setLogout(true)}>
                 <a>Logout</a>
               </li>
+              
             </ul>
           </div>
           <h3 className="text-white ml-4 mr-6 hidden lg:block font-medium">

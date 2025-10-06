@@ -10,7 +10,7 @@ const Manage = ({ ManagePromise }) => {
       <h1 className="text-4xl font-bold mb-7">Manage & Account</h1>
       <div className=" lg:grid grid-cols-3 gap-4 space-y-4 lg:space-y-0">
         {ManageData.map((cardData) => (
-          <ManageCard cardData={cardData} ></ManageCard>
+          <ManageCard cardData={cardData} key={cardData.title} ></ManageCard>
         ))}
       </div>
     </div>

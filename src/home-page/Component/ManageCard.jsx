@@ -2,7 +2,7 @@ import React from "react";
 
 const ManageCard = ({ cardData }) => {
   const { icon, title, description, btnText, color } = cardData;
-  console.log(color);
+  // console.log(color);
 
   return (
     <div className="p-8 shadow-lg bg-white space-y-2 rounded-xl">
